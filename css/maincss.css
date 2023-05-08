@@ -1,0 +1,263 @@
+@import url('/css/menuburg.css') (max-width: 1000px);
+
+@font-face {
+    font-family: 'TF2_menu';
+    src: url(/fonts/ofont.ru_TF2\ Build.ttf);
+}
+
+@font-face {
+    font-family: 'TF2_sec';
+    src: url(/fonts/TF2_Secondary.ttf);
+}
+
+p {
+    font-family: TF2_sec;
+}
+
+.burg{
+    position: fixed;
+    opacity: 0;
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+.background {
+    background-image: url(/imgs/Background_2fort2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    display: grid;
+}
+
+.mtext{
+    font-family: TF2_menu;
+    font-size: 25px;
+    color: rgb(247,241,225);
+    position: relative;
+    margin-top: 45px;
+    text-align: right;
+
+}
+
+.mtext span {
+    margin-right: 40px;
+}
+
+.panel {
+    background-color: rgb(36,32,31);
+    width: 100%;
+    height: 108px;
+    position: fixed;
+    padding: 10px;
+    z-index: 2;
+}
+
+header .logo {
+    height: 80px;
+    margin-left: 2%; 
+    margin-top: 15px;
+    position: fixed;
+    justify-self: center;
+}
+
+footer p {
+    color: rgb(255, 246, 230);
+}
+
+footer{
+    text-align: center;
+}
+
+footer nav > a, footer nav > span {
+    display: inline-block;
+    color: rgb(255, 246, 230);
+   }
+   
+footer nav > span {
+     margin: 0 7px;
+}
+
+footer nav:nth-child(2) {
+    margin-top: 20px;
+}
+
+footer nav img {
+    margin-right: 20px;
+}
+
+.checkm {
+    visibility: hidden;
+    position: absolute;
+}
+.mediaicons {
+    width: 40px;
+}
+
+.newsbl {
+    display: block;
+    background-color: rgb(255, 246, 230);
+    box-shadow: 0 0 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsart {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(253, 239, 212);
+    width: 95%;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.nimg {
+    width: 70%;
+}
+
+.nntext {
+    flex-direction: column;
+}
+
+.nztext {
+    height: 1vw;
+    grid-area: b1;
+    width: auto;
+    font-family: TF2_menu;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+a .nztext {
+    text-decoration: none;
+    color: rgb(36,32,31);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nztext:active {
+    color: rgb(122, 122, 122);
+}
+
+.ntext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22vw;
+    font-family: TF2_sec;
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+.newsartn {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(253, 239, 212);
+    width: 95%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.panelFooter {
+    margin-top: -70px;
+    background-color: rgb(36,32,31);
+    width: 100%;
+    height: 161px;
+    position: relative;
+    bottom: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(247,241,225);
+}
+
+header a:active {
+    color: rgb(146, 142, 132);
+}
+
+
+
+
+
+@media (max-width: 1000px){
+
+
+
+    .mtext{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        z-index: -2;
+        background-color: rgb(36,32,31);
+        text-align: right;
+        scale: 0;
+        transition: 0.05s;
+    }
+
+    .burg {
+        opacity: 1;
+        z-index: 4;
+        color: rgb(253, 239, 212);
+        margin-left: 85%;
+        margin-top: 5%;
+    }
+
+    header label input:checked ~ .mtext {
+        visibility: visible;
+        z-index: 10;
+        scale: 1;
+        transition: 0.05s;
+    }
+    
+
+    .newsbl {
+        display: flex;
+        flex-flow: column;
+        float: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .newsart {
+        flex-direction: column;
+    }
+
+    .newsartn {
+        flex-direction: column;
+    }
+
+    .nimg {
+        display: flex;
+        width: 100%;
+        grid-area:unset;
+        grid-row: unset;
+    }
+
+    .ntext {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+

@@ -1,0 +1,45 @@
+
+.artbl {
+    display: flex;
+    width: 60%;
+    background-color: rgb(255, 246, 230);
+    height: 100%;
+    margin: auto;
+    box-shadow: 0 0 5px;
+}
+
+.art_container {
+    margin-top: 140px;
+    margin-bottom: 80px;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.art_box {
+    float: left;
+    padding: 3px 3px 0 3px;
+    
+}
+
+
+@media (max-width: 1000px){
+
+    .artbl {
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+        float: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .art_container{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

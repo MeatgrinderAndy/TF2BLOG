@@ -1,0 +1,157 @@
+
+.panelFooterch {
+    margin-top: -40px;
+    background-color: rgb(36,32,31);
+    width: 100%;
+    height: 161px;
+    position: relative;
+    bottom: 0px;
+}
+
+.background2 {
+    background-image: url(/imgs/Background_upward_copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    background-attachment: fixed;
+    display: grid; 
+}
+
+.chinf {
+    background-color: rgb(247,241,225);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px;
+    margin-left: 20px;
+}
+
+.chinf p {
+    font-family: TF2_sec;
+}
+
+.chinf h2 {
+    font-family: TF2_menu;
+}
+
+
+.w1 {
+    background-image: url(/imgs/454-4549516_tf2-scout-gun-hd-png-download.png);
+}
+
+.weaponinf {
+    background-color: rgb(247,241,225);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px;
+    position: absolute;
+    width: 250px; 
+    z-index: -1;
+    bottom: 280px;
+}
+
+.weaponinf h2 {
+    font-family: TF2_menu;
+}
+
+.weaponinf p {
+    font-family: TF2_sec;
+}
+
+.crit {
+    color: red;
+}
+
+.artic{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 140px; 
+    width: 100%;
+}
+
+.artictxt{
+    display: flex;
+    flex-direction: column; 
+    width: 58%;
+}
+
+.mtc {
+    width: 450px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    border-radius: 4px; 
+    box-shadow: 0 0 3px;
+}
+
+.icon {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 1000px){
+    
+    .chinf {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+    .charimg, svg, .w1, .w2, .w3 {
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+        top: 0;
+    }
+
+    .chinf {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 0 0;
+        margin: 0 0 0 0;
+        padding: 10px;
+    }
+
+    .chinf h2 {
+        text-align: center;
+    }
+
+    .artictxt {
+        width: 100%;
+    }
+
+    .artic {
+        margin-top: 100px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .mtc {
+        width: 80%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .icon {
+        visibility: visible;
+        position: relative;
+        align-self: center;
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    svg {
+        position: absolute;
+        top: 0px;
+        z-index: -10;
+    }
+    
+    .panelFooterch {
+        width: 105%;
+    }
+
+    
+}
