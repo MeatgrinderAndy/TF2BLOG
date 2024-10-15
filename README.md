@@ -1,2 +1,2 @@
-# course_project
+# TF2BLOG
 КЯР Курсовой проект 
